@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.P Enterprises — Printing, Stamps &amp; Business Essentials, Nagpur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --paper: #F7F5F0;
+            --white: #FFFFFF;
+            --ink: #161513;
+            --ink-soft: #59564E;
+            --red: #B23A2E;
+            --line: #E2DDD1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .serif {
+            font-family: 'Fraunces', serif;
+        }
+
+        .mono {
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .wrap {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .eyebrow {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 14px;
+        }
+
+        header {
+            padding: 28px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        header .wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-mark {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-badge {
+            width: 54px;
+            height: 54px;
+            border: 2px solid var(--ink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fraunces', serif;
+            font-size: 20px;
+            font-weight: 600;
+            box-shadow: inset 0 0 0 2px var(--paper), inset 0 0 0 3px var(--ink);
+            letter-spacing: -0.5px;
+            flex-shrink: 0;
+        }
+
+        .logo-name {
+            font-family: 'Fraunces', serif;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+        }
+
+        .logo-tag {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--red);
+            text-transform: uppercase;
+            margin-top: 3px;
+            font-weight: 500;
+        }
+
+        header nav a {
+            font-size: 14px;
+            margin-left: 32px;
+            color: var(--ink-soft);
+            font-weight: 500;
+            transition: color 0.15s;
+        }
+
+        header nav a:hover {
+            color: var(--ink);
+        }
+
+        .btn {
+            display: inline-block;
+            font-family: 'IBM Plex Mono';
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 14px 24px;
+            background: var(--ink);
+            color: var(--white);
+            cursor: pointer;
+            border: 1px solid var(--ink);
+            transition: opacity .15s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.82;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .btn-red {
+            background: var(--red);
+            border-color: var(--red);
+        }
+
+        .hero {
+            padding: 88px 0 64px;
+            text-align: center;
+        }
+
+        .hero .eyebrow {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            font-family: 'Fraunces';
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 1.2;
+            max-width: 16ch;
+            margin: 0 auto 24px;
+        }
+
+        .hero p.lead {
+            font-size: 16px;
+            color: var(--ink-soft);
+            max-width: 60ch;
+            margin: 0 auto 34px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        section {
+            padding: 72px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .section-head {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Fraunces';
+            font-weight: 500;
+            font-size: 30px;
+        }
+
+        .section-head p {
+            color: var(--ink-soft);
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .cat-num {
+            font-family: 'IBM Plex Mono';
+            font-size: 12px;
+            color: var(--red);
+            margin-bottom: 10px;
+        }
+
+        .cat-title {
+            font-family: 'Fraunces';
+            font-size: 19px;
+            margin-bottom: 14px;
+        }
+
+        .cat-card ul {
+            list-style: none;
+        }
+
+        .cat-card li {
+            font-size: 14px;
+            color: var(--ink-soft);
+            padding: 6px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .urgent-banner {
+            background: var(--ink);
+            color: var(--white);
+            padding: 28px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        .urgent-banner .eyebrow {
+            color: #E5A79B;
+            margin-bottom: 6px;
+        }
+
+        .urgent-banner h3 {
+            font-family: 'Fraunces';
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .urgent-banner p {
+            font-size: 13px;
+            color: #C9C6BE;
+            margin-top: 4px;
+        }
+
+        /* Expressive Stamp Studio Styling — Bespoke Craftsman Design */
+        .design-tool-wrapper {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            padding: 32px;
+            margin-bottom: 48px;
+            box-shadow: 0 2px 12px rgba(22, 21, 19, 0.04);
+        }
+
+        .studio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--line);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .studio-title {
+            font-family: 'Fraunces', serif;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+        }
+
+        .studio-sub {
+            font-size: 13px;
+            color: var(--ink-soft);
+            margin-top: 4px;
+        }
+
+        /* Preset Pills Bar */
+        .preset-bar-wrapper {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        .preset-bar {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: var(--line) transparent;
+        }
+
+        .preset-bar::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        .preset-bar::-webkit-scrollbar-thumb {
+            background: var(--line);
+            border-radius: 4px;
+        }
+
+        .preset-pill {
+            padding: 7px 14px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 500;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.15s ease;
+            color: var(--ink-soft);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .preset-pill:hover {
+            color: var(--ink);
+            border-color: var(--ink);
+        }
+
+        .preset-pill.active {
+            background: var(--ink);
+            color: var(--white);
+            border-color: var(--ink);
+        }
+
+        .studio-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            gap: 36px;
+            align-items: start;
+        }
+
+        /* Control Panels */
+        .control-group-title {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--red);
+            margin: 18px 0 10px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px dashed var(--line);
+        }
+
+        .control-row {
+            margin-bottom: 14px;
+        }
+
+        .control-row label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--ink-soft);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .control-row input[type=text],
+        .control-row select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--line);
+            border-radius: 2px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            background: var(--paper);
+            color: var(--ink);
+            transition: border-color 0.2s;
+        }
+
+        .control-row input[type=text]:focus,
+        .control-row select:focus {
+            outline: none;
+            border-color: var(--ink);
+        }
+
+        /* Shape Selector Grid */
+        .shape-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 6px;
+            margin-bottom: 14px;
+        }
+
+        .shape-btn {
+            padding: 10px 2px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 3px;
+            font-size: 10px;
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: var(--ink-soft);
+        }
+
+        .shape-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.8;
+        }
+
+        .shape-btn:hover {
+            color: var(--ink);
+            border-color: var(--ink);
+        }
+
+        .shape-btn.active {
+            background: var(--ink);
+            color: var(--white);
+            border-color: var(--ink);
+        }
+
+        /* Color Swatches */
+        .color-swatches {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .color-swatch {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: transform 0.15s, border-color 0.15s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        .color-swatch:hover {
+            transform: scale(1.1);
+        }
+
+        .color-swatch.active {
+            border-color: var(--ink);
+            transform: scale(1.15);
+        }
+
+        /* Realism Sliders */
+        .slider-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .slider-item label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .slider-item input[type=range] {
+            width: 100%;
+            accent-color: var(--red);
+            cursor: pointer;
+            margin-top: 4px;
+        }
+
+        /* Canvas Preview Box */
+        .stamp-preview-container {
+            position: sticky;
+            top: 24px;
+            background: #F7F5F0;
+            background-image: radial-gradient(#E2DDD1 1px, transparent 0);
+            background-size: 16px 16px;
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            padding: 28px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 360px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+        }
+
+        .stamp-svg-wrapper {
+            width: 100%;
+            max-width: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease-out;
+        }
+
+        .stamp-svg-wrapper svg {
+            width: 100%;
+            height: auto;
+            max-height: 290px;
+        }
+
+        .studio-toast {
+            display: none;
+            margin-top: 12px;
+            padding: 8px 14px;
+            background: var(--ink);
+            color: var(--white);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 11px;
+            border-radius: 2px;
+            text-align: center;
+            width: 100%;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .stamp-actions-bar {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .stamp-actions-bar .btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px 8px;
+            font-size: 11px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background: var(--white);
+            border: 1px solid var(--line);
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .product img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            background: var(--paper);
+        }
+
+        .product-body {
+            padding: 16px;
+        }
+
+        .product-name {
+            font-family: 'Fraunces';
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .product-desc {
+            font-size: 12px;
+            color: var(--ink-soft);
+            margin-bottom: 12px;
+            min-height: 32px;
+        }
+
+        .product-actions {
+            display: flex;
+        }
+
+        .product-actions .btn {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+        }
+
+        .customize-panel {
+            display: none;
+            padding: 14px 16px 16px;
+            border-top: 1px dashed var(--line);
+        }
+
+        .customize-panel.open {
+            display: block;
+        }
+
+        .customize-panel input[type=text] {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid var(--line);
+            font-size: 13px;
+            margin-bottom: 8px;
+            background: var(--paper);
+        }
+
+        .customize-panel .mini-stamp {
+            border: 2px double var(--red);
+            color: var(--red);
+            padding: 8px 12px;
+            font-family: 'Fraunces';
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            text-align: center;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+
+        .process-num {
+            font-family: 'IBM Plex Mono';
+            font-size: 12px;
+            color: var(--red);
+            margin-bottom: 10px;
+        }
+
+        .process-title {
+            font-family: 'Fraunces';
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .process-desc {
+            font-size: 13px;
+            color: var(--ink-soft);
+        }
+
+        .order-cta {
+            text-align: center;
+        }
+
+        .order-cta p {
+            color: var(--ink-soft);
+            font-size: 15px;
+            max-width: 44ch;
+            margin: 0 auto 28px;
+        }
+
+        .order-bar {
+            position: sticky;
+            bottom: 0;
+            background: var(--ink);
+            color: var(--white);
+            border-top: 3px double var(--red);
+            padding: 14px 0;
+            display: none;
+            z-index: 10;
+        }
+
+        .order-bar.visible {
+            display: block;
+        }
+
+        .order-bar .wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .order-bar .count {
+            font-family: 'IBM Plex Mono';
+            font-size: 13px;
+        }
+
+        #checkout {
+            display: none;
+        }
+
+        #checkout.open {
+            display: block;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--line);
+            font-size: 14px;
+        }
+
+        .cart-item button {
+            background: none;
+            border: none;
+            color: var(--red);
+            cursor: pointer;
+            font-family: 'IBM Plex Mono';
+            font-size: 12px;
+        }
+
+        form.checkout-form input,
+        form.checkout-form select {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid var(--line);
+            margin-bottom: 14px;
+            font-size: 14px;
+            background: var(--white);
+        }
+
+        form.checkout-form label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--ink-soft);
+            margin-bottom: 6px;
+        }
+
+        footer {
+            padding: 44px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        footer .wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer .f-brand {
+            font-family: 'Fraunces', serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        footer .f-meta {
+            font-size: 13px;
+            color: var(--ink-soft);
+            line-height: 1.7;
+        }
+
+        footer a.map-link {
+            font-size: 13px;
+            color: var(--red);
+        }
+
+        /* Mobile Responsiveness Improvements */
+        @media (max-width: 900px) {
+            .studio-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .stamp-preview-container {
+                position: relative;
+                top: 0;
+                min-height: 320px;
+                padding: 24px 16px;
+            }
+        }
+
+        @media (max-width: 860px) {
+
+            .cat-grid,
+            .gallery-grid,
+            .product-grid,
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .design-tool-wrapper {
+                padding: 20px 16px;
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            .cat-grid,
+            .gallery-grid,
+            .product-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .shape-grid {
+                gap: 4px;
+            }
+
+            .shape-btn {
+                padding: 8px 1px;
+                font-size: 9px;
+            }
+
+            .shape-btn svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            .slider-row {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .stamp-actions-bar {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .studio-title {
+                font-size: 20px;
+            }
+
+            .urgent-banner {
+                padding: 20px 18px;
+            }
+
+            .logo-badge {
+                width: 44px;
+                height: 44px;
+                font-size: 16px;
+            }
+
+            .logo-name {
+                font-size: 20px;
+            }
+
+            .logo-tag {
+                font-size: 9px;
+                letter-spacing: 1.5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrap">
+            <div class="logo-mark">
+                <div class="logo-badge">N·P</div>
+                <div>
+                    <div class="logo-name">N.P Enterprises</div>
+                    <div class="logo-tag">Stamps · Printing · Business Essentials</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#catalogue">Catalogue</a>
+                <a href="#process">Process</a>
+                <a href="#order">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="border-top:none;">
+        <div class="wrap">
+            <div class="eyebrow">Nagpur · Since 1993</div>
+            <h1>Printing, stamping, and business essentials — all in one place.</h1>
+            <p class="lead">N.P Enterprises deals in stamps, business cards, flyers, brochures, stickers, banners,
+                labels, packaging, office stationery, personalised products, and much more. With 32+ years of service
+                experience, you can be completely carefree.</p>
+            <div class="hero-actions">
+                <a href="https://wa.me/919823111814" class="btn btn-red" target="_blank">Order on WhatsApp</a>
+                <a href="#catalogue" class="btn btn-outline">See What's Possible</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow" style="justify-content:center; display:flex;">What we make</div>
+                <h2>Print that feels personal.</h2>
+            </div>
+            <div class="cat-grid">
+                <div class="cat-card">
+                    <div class="cat-num mono">01</div>
+                    <div class="cat-title">Printing &amp; marketing</div>
+                    <ul>
+                        <li>Business cards &amp; flyers</li>
+                        <li>Brochures &amp; menus</li>
+                        <li>Stickers &amp; labels</li>
+                        <li>Posters &amp; banners</li>
+                        <li>Packaging &amp; promos</li>
+                    </ul>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-num mono">02</div>
+                    <div class="cat-title">Business essentials</div>
+                    <ul>
+                        <li>Letterheads &amp; invoices</li>
+                        <li>Visiting cards &amp; stationery</li>
+                        <li>Gifts &amp; photo products</li>
+                        <li>Envelopes &amp; notepads</li>
+                        <li>Folders &amp; ID cards</li>
+                    </ul>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-num mono">03</div>
+                    <div class="cat-title">Stamps &amp; seals</div>
+                    <ul>
+                        <li>Custom &amp; office stamps</li>
+                        <li>Seals &amp; urgent orders</li>
+                        <li>Self-inking &amp; date stamps</li>
+                        <li>Nameplates &amp; embossers</li>
+                        <li>Quality &amp; quick service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow" style="justify-content:center; display:flex;">Ink, paper, impression</div>
+                <h2>The details do the talking.</h2>
+                <p>Printing for every idea, every occasion, and every business.</p>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://framerusercontent.com/images/zNngVaTPUmb4zCDFw1MgS9dAE.jpg"
+                    alt="N.P Enterprises stamp product">
+                <img src="https://framerusercontent.com/images/6AX06kQWuhd5hpyQcSM0FruBkvA.jpg"
+                    alt="N.P Enterprises stamp product">
+                <img src="https://framerusercontent.com/images/WSH7uawrtJwz2ynQ1GAvEmsj8.jpg" alt="Pocket stamp">
+                <img src="https://framerusercontent.com/images/8ZlIq5giwbCHR0We28qciWKSzcw.jpg"
+                    alt="N.P Enterprises stamp collection">
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogue">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow" style="justify-content:center; display:flex;">Stamp &amp; seal catalogue</div>
+                <h2>The stamp you need, made right.</h2>
+                <p>Choose from a broad range of popular stamp and seal formats. Need it urgently? We can prepare a
+                    custom rubber stamp in under 30 minutes.</p>
+            </div>
+
+            <div class="urgent-banner">
+                <div>
+                    <div class="eyebrow">Urgent custom rubber stamps</div>
+                    <h3>Need a stamp today?</h3>
+                    <p>Share your details on WhatsApp and we can prepare a custom rubber stamp in under 30 minutes.</p>
+                </div>
+                <a href="https://wa.me/919823111814" class="btn" target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- Interactive Stamp Designer Studio -->
+            <div class="design-tool-wrapper" id="design-tool">
+                <div class="studio-header">
+                    <div>
+                        <div class="studio-title">Stamp Designer Studio</div>
+                        <div class="studio-sub">Select a standard Nagpur format or craft a bespoke rubber stamp,
+                            self-inking seal, or embosser.</div>
+                    </div>
+                </div>
+
+                <!-- Quick Presets Bar -->
+                <div class="preset-bar-wrapper">
+                    <div class="preset-bar">
+                        <button class="preset-pill active" onclick="applyPreset('company')">Round Company Seal</button>
+                        <button class="preset-pill" onclick="applyPreset('advocate')">Advocate / Legal Seal</button>
+                        <button class="preset-pill" onclick="applyPreset('doctor')">Medical Practitioner</button>
+                        <button class="preset-pill" onclick="applyPreset('status')">Paid / Approved Box</button>
+                        <button class="preset-pill" onclick="applyPreset('signature')">Signature &amp;
+                            Designation</button>
+                        <button class="preset-pill" onclick="applyPreset('notary')">Notary Public Seal</button>
+                    </div>
+                </div>
+
+                <div class="studio-grid">
+                    <!-- Controls Column -->
+                    <div class="studio-controls">
+
+                        <!-- 1. Shape Selection -->
+                        <div class="control-group-title">Stamp Shape &amp; Geometry</div>
+                        <div class="shape-grid">
+                            <button class="shape-btn active" id="shape-btn-circle" onclick="setShape('circle')">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                                <span>Circle</span>
+                            </button>
+                            <button class="shape-btn" id="shape-btn-oval" onclick="setShape('oval')">
+                                <svg viewBox="0 0 24 24">
+                                    <ellipse cx="12" cy="12" rx="10" ry="6" />
+                                </svg>
+                                <span>Oval</span>
+                            </button>
+                            <button class="shape-btn" id="shape-btn-rectangle" onclick="setShape('rectangle')">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="3" y="6" width="18" height="12" rx="1" />
+                                </svg>
+                                <span>Rectangle</span>
+                            </button>
+                            <button class="shape-btn" id="shape-btn-square" onclick="setShape('square')">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                                </svg>
+                                <span>Square</span>
+                            </button>
+                            <button class="shape-btn" id="shape-btn-badge" onclick="setShape('badge')">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2l2.4 4.8 5.3.8-3.8 3.7.9 5.3-4.8-2.5-4.8 2.5.9-5.3-3.8-3.7 5.3-.8z" />
+                                </svg>
+                                <span>Badge</span>
+                            </button>
+                        </div>
+
+                        <!-- 2. Ink Color Swatches -->
+                        <div class="control-group-title">Ink Palette &amp; Border Style</div>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div class="color-swatches">
+                                <div class="color-swatch active" style="background:#B23A2E;" title="Stamp Red"
+                                    onclick="setInkColor('#B23A2E', this)"></div>
+                                <div class="color-swatch" style="background:#1D4ED8;" title="Royal Blue"
+                                    onclick="setInkColor('#1D4ED8', this)"></div>
+                                <div class="color-swatch" style="background:#18181B;" title="Jet Black"
+                                    onclick="setInkColor('#18181B', this)"></div>
+                                <div class="color-swatch" style="background:#15803D;" title="Emerald Green"
+                                    onclick="setInkColor('#15803D', this)"></div>
+                                <div class="color-swatch" style="background:#7E22CE;" title="Violet"
+                                    onclick="setInkColor('#7E22CE', this)"></div>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:6px;">
+                                <label for="custom-color-picker"
+                                    style="font-size:11px; text-transform:uppercase; color:var(--ink-soft); margin:0;">Custom
+                                    Shade:</label>
+                                <input type="color" id="custom-color-picker" value="#B23A2E"
+                                    onchange="setInkColor(this.value, null)"
+                                    style="border:none; width:28px; height:28px; cursor:pointer; background:none;">
+                            </div>
+                        </div>
+
+                        <div class="control-row">
+                            <label for="border-style-select">Border Frame Style</label>
+                            <select id="border-style-select" onchange="updateStudioPreview()">
+                                <option value="double">Double Line (Classic Stamp)</option>
+                                <option value="solid">Single Thick Border</option>
+                                <option value="dashed">Dashed / Dotted Edge</option>
+                                <option value="serrated">Serrated / Postage Edge</option>
+                            </select>
+                        </div>
+
+                        <!-- 3. Text Fields -->
+                        <div class="control-group-title">Text Lines &amp; Inscriptions</div>
+
+                        <div class="control-row">
+                            <label for="stamp-top-text">Top Arc / Primary Header</label>
+                            <input type="text" id="stamp-top-text" placeholder="e.g. N.P ENTERPRISES PVT LTD"
+                                value="N.P ENTERPRISES PVT LTD" oninput="updateStudioPreview()">
+                        </div>
+
+                        <div class="control-row">
+                            <label for="stamp-center-text">Center Line / Name</label>
+                            <input type="text" id="stamp-center-text" placeholder="e.g. RAHUL SHARMA"
+                                value="NAGPUR BRANCH" oninput="updateStudioPreview()">
+                        </div>
+
+                        <div class="control-row">
+                            <label for="stamp-bottom-text">Bottom Arc / Location</label>
+                            <input type="text" id="stamp-bottom-text" placeholder="e.g. MAHARASHTRA • INDIA"
+                                value="★ MAHARASHTRA ★" oninput="updateStudioPreview()">
+                        </div>
+
+                        <div class="control-row">
+                            <label for="stamp-sub-text">Sub-Details / Registration No.</label>
+                            <input type="text" id="stamp-sub-text" placeholder="e.g. REG. NO. 1993/NGP"
+                                value="ESTD. 1993" oninput="updateStudioPreview()">
+                        </div>
+
+                        <!-- 4. Typography & Emblems -->
+                        <div class="control-group-title">Typography &amp; Center Emblem</div>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                            <div class="control-row">
+                                <label for="stamp-font-family">Font Family</label>
+                                <select id="stamp-font-family" onchange="updateStudioPreview()">
+                                    <option value="Fraunces">Fraunces (Serif)</option>
+                                    <option value="Inter">Inter (Sans)</option>
+                                    <option value="IBM Plex Mono">IBM Plex Mono</option>
+                                </select>
+                            </div>
+                            <div class="control-row">
+                                <label for="stamp-emblem">Center Emblem</label>
+                                <select id="stamp-emblem" onchange="updateStudioPreview()">
+                                    <option value="star">Star Emblem (★)</option>
+                                    <option value="scales">Scales of Justice (⚖)</option>
+                                    <option value="cross">Medical Cross (✚)</option>
+                                    <option value="verified">Verified Badge (✔)</option>
+                                    <option value="crown">Official Crown (👑)</option>
+                                    <option value="date">Date Block (📅)</option>
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 5. Realism Sliders -->
+                        <div class="control-group-title">Hand-Stamp Finish &amp; Texture</div>
+                        <div class="slider-row">
+                            <div class="slider-item">
+                                <label for="stamp-tilt">Stamp Tilt: <span id="tilt-val">-3°</span></label>
+                                <input type="range" id="stamp-tilt" min="-15" max="15" value="-3"
+                                    oninput="document.getElementById('tilt-val').textContent=this.value+'°'; updateStudioPreview();">
+                            </div>
+                            <div class="slider-item">
+                                <label for="stamp-distress">Ink Texture: <span id="distress-val">25%</span></label>
+                                <input type="range" id="stamp-distress" min="0" max="100" value="25"
+                                    oninput="document.getElementById('distress-val').textContent=this.value+'%'; updateStudioPreview();">
+                            </div>
+                        </div>
+
+                        <!-- Stamp Hardware Type -->
+                        <div class="control-row">
+                            <label for="stamp-hardware-type">Stamp Mount Type</label>
+                            <select id="stamp-hardware-type">
+                                <option value="Self-inking Stamp">Self-inking stamp mount (Daily office use)</option>
+                                <option value="Basic Wooden Rubber Stamp">Basic wooden rubber stamp (Classic economical)
+                                </option>
+                                <option value="Pocket Portable Stamp">Pocket portable stamp (Compact &amp; travel)
+                                </option>
+                                <option value="Pre-inked Flash Stamp">Pre-inked flash stamp (Sharp crisp detail)
+                                </option>
+                                <option value="Paper Embosser Seal">Paper embosser seal (Raised impression)</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Live SVG Canvas Preview Column -->
+                    <div class="stamp-preview-container">
+                        <div class="eyebrow" style="margin-bottom:12px;">Impression Preview</div>
+                        <div class="stamp-svg-wrapper" id="stamp-svg-wrapper">
+                            <!-- Dynamic SVG rendered by updateStudioPreview() -->
+                        </div>
+                        <div class="studio-toast" id="studio-toast">✓ Custom Stamp added to your order</div>
+
+                        <div class="stamp-actions-bar">
+                            <button class="btn btn-red" onclick="addStudioStampToCart()">Add Custom Stamp to
+                                Order</button>
+                            <button class="btn btn-outline" onclick="downloadStampSVG()">Download SVG Draft</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow" style="justify-content:center; display:flex;">Fast, clear, reliable</div>
+                <h2>From urgent stamps to complete print orders.</h2>
+            </div>
+            <div class="process-grid">
+                <div>
+                    <div class="process-num">01</div>
+                    <div class="process-title">Choose</div>
+                    <div class="process-desc">Tell us what you need and where it will live.</div>
+                </div>
+                <div>
+                    <div class="process-num">02</div>
+                    <div class="process-title">Design</div>
+                    <div class="process-desc">Send your artwork or work with us on a simple direction.</div>
+                </div>
+                <div>
+                    <div class="process-num">03</div>
+                    <div class="process-title">Proof</div>
+                    <div class="process-desc">We share a proof so the final impression feels exactly right.</div>
+                </div>
+                <div>
+                    <div class="process-num">04</div>
+                    <div class="process-title">Make</div>
+                    <div class="process-desc">We make your order with care, then pack it ready for its next chapter.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-cta">
+        <div class="wrap">
+            <div class="eyebrow" style="justify-content:center; display:flex;">Order from N.P Enterprises</div>
+            <h2>Let's put it on paper.</h2>
+            <p>For custom stamps, printing, and business essentials, contact us on +91 98231 11814.</p>
+            <a href="https://wa.me/919823111814" class="btn btn-red" target="_blank">Order on WhatsApp</a>
+        </div>
+    </section>
+
+    <section id="checkout" style="border-top:1px solid var(--line);">
+        <div class="wrap">
+            <div class="section-head" style="text-align:left;">
+                <div class="eyebrow">Your order</div>
+                <h2>Confirm &amp; send via WhatsApp</h2>
+            </div>
+            <div id="cart-list"></div>
+            <form class="checkout-form" onsubmit="return sendOrder(event)">
+                <label for="cust-name">Your name</label>
+                <input type="text" id="cust-name" required>
+                <label for="cust-phone">Phone number</label>
+                <input type="text" id="cust-phone" required placeholder="10-digit mobile number">
+                <label for="cust-mode">Pickup or delivery</label>
+                <select id="cust-mode">
+                    <option value="Pickup from shop">Pickup from shop (Free)</option>
+                    <option value="Home/Office delivery in Nagpur">Home / Office delivery in Nagpur (delivery charges
+                        apply)</option>
+                </select>
+                <p
+                    style="font-size:12px; color:var(--red); margin-top:-8px; margin-bottom:14px; font-family:'IBM Plex Mono', monospace;">
+                    * Delivery charges apply for Home / Office delivery depending on area in Nagpur.</p>
+                <button type="submit" class="btn btn-red">Send order on WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="order-bar" id="order-bar">
+        <div class="wrap">
+            <span class="count mono" id="order-count">0 items in order</span>
+            <a href="#checkout" class="btn btn-red" onclick="openCheckout()">Review &amp; send order</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <div>
+                <div class="f-brand">N.P Enterprises</div>
+                <div class="f-meta">Printing, stamps &amp; business essentials<br>Nishad Ahmad Pathan</div>
+            </div>
+            <div>
+                <div class="f-meta">
+                    Main road, near Baidhyanath building,<br>
+                    chhoti masjid complex, Sitabuldi,<br>
+                    Nagpur-440012
+                </div>
+                <a class="map-link" href="https://maps.app.goo.gl/8BoMRvQTJFYjygXVA" target="_blank">View shop location
+                    →</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const WHATSAPP_NUMBER = "919823111814";
+
+        const PRODUCTS = [
+            { id: "self-inking", preset: "company", name: "Self-inking stamps", desc: "Clear everyday impressions.", img: "https://framerusercontent.com/images/QzOCfigdfwjjog3ycvlSAuxb45M.png" },
+            { id: "basic", preset: "signature", name: "Basic rubber stamps", desc: "Classic custom stamps for business and personal use.", img: "https://framerusercontent.com/images/1UO5BZzMkdCi5x3cHEsgddvV6gQ.png" },
+            { id: "pocket", preset: "advocate", name: "Pocket stamps", desc: "Compact, portable stamps for work on the go.", img: "https://framerusercontent.com/images/Bp1BFVVdgBIh1LkL2DqVJB6arw.png" },
+            { id: "name", preset: "doctor", name: "Name stamps", desc: "Personalised name stamps for daily use.", img: "https://framerusercontent.com/images/KsRGCPMwXhysiKxb2Hy1SXFWbso.png" },
+            { id: "pre-inking", preset: "company", name: "Pre-inking stamps", desc: "High-detail custom stamps with built-in ink.", img: "https://framerusercontent.com/images/zNngVaTPUmb4zCDFw1MgS9dAE.jpg" },
+            { id: "fabric", preset: "status", name: "Fabric stamps", desc: "Stamps made for marking fabric and clothing.", img: "https://framerusercontent.com/images/8ZlIq5giwbCHR0We28qciWKSzcw.jpg" },
+            { id: "date", preset: "status", name: "Date stamps", desc: "Custom date stamps for records and receipts.", img: "https://framerusercontent.com/images/6AX06kQWuhd5hpyQcSM0FruBkvA.jpg" },
+            { id: "embosser", preset: "notary", name: "Paper embossers", desc: "Personalised embossers for refined stationery.", img: "https://framerusercontent.com/images/AhXaOvycRxfmp15cnCzsml15or0.jpg" }
+        ];
+
+        let cart = [];
+
+        // Studio State
+        let studioState = {
+            shape: 'circle',
+            inkColor: '#B23A2E',
+            preset: 'company'
+        };
+
+        const PRESETS = {
+            company: {
+                shape: 'circle',
+                topText: 'N.P ENTERPRISES PVT LTD',
+                centerText: 'NAGPUR BRANCH',
+                bottomText: '★ MAHARASHTRA ★',
+                subText: 'ESTD. 1993',
+                borderStyle: 'double',
+                emblem: 'star',
+                inkColor: '#B23A2E'
+            },
+            advocate: {
+                shape: 'oval',
+                topText: 'HIGH COURT ADVOCATE',
+                centerText: 'RAHUL SHARMA',
+                bottomText: 'MAHARASHTRA & GOA',
+                subText: 'REG. NO. MAH/1842/2015',
+                borderStyle: 'double',
+                emblem: 'scales',
+                inkColor: '#1D4ED8'
+            },
+            doctor: {
+                shape: 'rectangle',
+                topText: 'DR. ANANYA ROY, M.D.',
+                centerText: 'PHYSICIAN & SURGEON',
+                bottomText: 'NAGPUR MEDICAL CENTER',
+                subText: 'REG. NO. MCI/84920',
+                borderStyle: 'double',
+                emblem: 'cross',
+                inkColor: '#15803D'
+            },
+            status: {
+                shape: 'rectangle',
+                topText: 'OFFICIAL DOCUMENT',
+                centerText: 'APPROVED',
+                bottomText: 'N.P ENTERPRISES',
+                subText: 'DATE: 09 AUG 2026',
+                borderStyle: 'solid',
+                emblem: 'verified',
+                inkColor: '#B23A2E'
+            },
+            signature: {
+                shape: 'rectangle',
+                topText: 'FOR N.P ENTERPRISES',
+                centerText: '___________________',
+                bottomText: 'AUTHORISED SIGNATORY',
+                subText: 'PROPRIETOR',
+                borderStyle: 'dashed',
+                emblem: 'none',
+                inkColor: '#18181B'
+            },
+            notary: {
+                shape: 'badge',
+                topText: 'NOTARY PUBLIC',
+                centerText: 'GOVT. OF INDIA',
+                bottomText: 'NAGPUR DISTRICT',
+                subText: 'REG. NO. 4029',
+                borderStyle: 'serrated',
+                emblem: 'crown',
+                inkColor: '#7E22CE'
+            }
+        };
+
+        function setShape(shapeKey) {
+            studioState.shape = shapeKey;
+            document.querySelectorAll('.shape-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById('shape-btn-' + shapeKey);
+            if (activeBtn) activeBtn.classList.add('active');
+            updateStudioPreview();
+        }
+
+        function setInkColor(color, swatchElem) {
+            studioState.inkColor = color;
+            document.querySelectorAll('.color-swatch').forEach(sw => sw.classList.remove('active'));
+            if (swatchElem) {
+                swatchElem.classList.add('active');
+            }
+            document.getElementById('custom-color-picker').value = color;
+            updateStudioPreview();
+        }
+
+        function applyPreset(presetKey) {
+            const p = PRESETS[presetKey];
+            if (!p) return;
+
+            studioState.preset = presetKey;
+            studioState.shape = p.shape;
+            studioState.inkColor = p.inkColor;
+
+            // Update Pills
+            document.querySelectorAll('.preset-pill').forEach(pill => pill.classList.remove('active'));
+            event.currentTarget && event.currentTarget.classList && event.currentTarget.classList.add('active');
+
+            // Set Form Controls
+            document.getElementById('stamp-top-text').value = p.topText;
+            document.getElementById('stamp-center-text').value = p.centerText;
+            document.getElementById('stamp-bottom-text').value = p.bottomText;
+            document.getElementById('stamp-sub-text').value = p.subText;
+            document.getElementById('border-style-select').value = p.borderStyle;
+            document.getElementById('stamp-emblem').value = p.emblem;
+
+            // Set Shape & Color
+            setShape(p.shape);
+            setInkColor(p.inkColor, null);
+
+            updateStudioPreview();
+        }
+
+        function getEmblemSymbol(emblemKey) {
+            switch (emblemKey) {
+                case 'star': return '★';
+                case 'scales': return '⚖';
+                case 'cross': return '✚';
+                case 'verified': return '✔';
+                case 'crown': return '👑';
+                case 'date': return '📅 09 AUG 2026';
+                default: return '';
+            }
+        }
+
+        function updateStudioPreview() {
+            const wrapper = document.getElementById('stamp-svg-wrapper');
+            if (!wrapper) return;
+
+            const topText = (document.getElementById('stamp-top-text').value || '').toUpperCase();
+            const centerText = (document.getElementById('stamp-center-text').value || '').toUpperCase();
+            const bottomText = (document.getElementById('stamp-bottom-text').value || '').toUpperCase();
+            const subText = (document.getElementById('stamp-sub-text').value || '').toUpperCase();
+            const borderStyle = document.getElementById('border-style-select').value;
+            const fontFamily = document.getElementById('stamp-font-family').value;
+            const emblemKey = document.getElementById('stamp-emblem').value;
+            const emblemSymbol = getEmblemSymbol(emblemKey);
+
+            const tilt = document.getElementById('stamp-tilt').value || -3;
+            const distress = document.getElementById('stamp-distress').value || 25;
+
+            const shape = studioState.shape;
+            const color = studioState.inkColor;
+
+            let dashArray = 'none';
+            if (borderStyle === 'dashed') dashArray = '6 4';
+            if (borderStyle === 'serrated') dashArray = '3 3';
+
+            let svgContent = '';
+
+            // Generate Shape Borders and Layout
+            if (shape === 'circle') {
+                svgContent = `
+        <!-- Outer Circle -->
+        <circle cx="160" cy="160" r="142" stroke="${color}" stroke-width="4.5" fill="none" stroke-dasharray="${dashArray}"/>
+        ${borderStyle === 'double' ? `<circle cx="160" cy="160" r="133" stroke="${color}" stroke-width="1.8" fill="none"/>` : ''}
+        <circle cx="160" cy="160" r="92" stroke="${color}" stroke-width="1.5" fill="none"/>
+
+        <!-- Curved Text Arcs -->
+        ${topText ? `
+          <text fill="${color}" font-family="${fontFamily}" font-size="13" font-weight="700" letter-spacing="1.8">
+            <textPath href="#top-circle-arc" startOffset="50%" text-anchor="middle">${topText}</textPath>
+          </text>
+        ` : ''}
+
+        ${bottomText ? `
+          <text fill="${color}" font-family="${fontFamily}" font-size="12" font-weight="700" letter-spacing="1.5">
+            <textPath href="#bottom-circle-arc" startOffset="50%" text-anchor="middle">${bottomText}</textPath>
+          </text>
+        ` : ''}
+
+        <!-- Center Elements -->
+        ${emblemSymbol ? `<text x="160" y="${centerText ? 142 : 165}" text-anchor="middle" fill="${color}" font-size="20">${emblemSymbol}</text>` : ''}
+        ${centerText ? `<text x="160" y="${emblemSymbol ? 168 : 162}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="15" font-weight="800" letter-spacing="1">${centerText}</text>` : ''}
+        ${subText ? `<text x="160" y="${centerText || emblemSymbol ? 190 : 165}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="11" font-weight="600">${subText}</text>` : ''}
+      `;
+            } else if (shape === 'oval') {
+                svgContent = `
+        <!-- Outer Oval -->
+        <ellipse cx="160" cy="160" rx="145" ry="96" stroke="${color}" stroke-width="4.5" fill="none" stroke-dasharray="${dashArray}"/>
+        ${borderStyle === 'double' ? `<ellipse cx="160" cy="160" rx="136" ry="87" stroke="${color}" stroke-width="1.8" fill="none"/>` : ''}
+        <ellipse cx="160" cy="160" rx="98" ry="56" stroke="${color}" stroke-width="1.2" fill="none"/>
+
+        <!-- Curved Oval Arcs -->
+        ${topText ? `
+          <text fill="${color}" font-family="${fontFamily}" font-size="12" font-weight="700" letter-spacing="1.5">
+            <textPath href="#top-oval-arc" startOffset="50%" text-anchor="middle">${topText}</textPath>
+          </text>
+        ` : ''}
+
+        ${bottomText ? `
+          <text fill="${color}" font-family="${fontFamily}" font-size="11" font-weight="700" letter-spacing="1.5">
+            <textPath href="#bottom-oval-arc" startOffset="50%" text-anchor="middle">${bottomText}</textPath>
+          </text>
+        ` : ''}
+
+        <!-- Center Elements -->
+        ${emblemSymbol ? `<text x="160" y="${centerText ? 145 : 165}" text-anchor="middle" fill="${color}" font-size="18">${emblemSymbol}</text>` : ''}
+        ${centerText ? `<text x="160" y="${emblemSymbol ? 167 : 162}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="14" font-weight="800">${centerText}</text>` : ''}
+        ${subText ? `<text x="160" y="${centerText ? 186 : 165}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="10" font-weight="600">${subText}</text>` : ''}
+      `;
+            } else if (shape === 'rectangle') {
+                svgContent = `
+        <!-- Rectangle Borders -->
+        <rect x="16" y="44" width="288" height="232" rx="4" stroke="${color}" stroke-width="4" fill="none" stroke-dasharray="${dashArray}"/>
+        ${borderStyle === 'double' ? `<rect x="23" y="51" width="274" height="218" rx="2" stroke="${color}" stroke-width="1.5" fill="none"/>` : ''}
+
+        <!-- Lines and Text -->
+        ${topText ? `<text x="160" y="82" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="13" font-weight="700" letter-spacing="1.5">${topText}</text>` : ''}
+        <line x1="36" y1="96" x2="284" y2="96" stroke="${color}" stroke-width="1.5"/>
+
+        ${emblemSymbol ? `<text x="160" y="128" text-anchor="middle" fill="${color}" font-size="22">${emblemSymbol}</text>` : ''}
+        ${centerText ? `<text x="160" y="${emblemSymbol ? 158 : 148}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="20" font-weight="800" letter-spacing="1.5">${centerText}</text>` : ''}
+
+        <line x1="36" y1="184" x2="284" y2="184" stroke="${color}" stroke-width="1.5"/>
+        ${subText ? `<text x="160" y="210" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="12" font-weight="600">${subText}</text>` : ''}
+        ${bottomText ? `<text x="160" y="238" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="11" font-weight="500">${bottomText}</text>` : ''}
+      `;
+            } else if (shape === 'square') {
+                svgContent = `
+        <!-- Square Borders -->
+        <rect x="24" y="24" width="272" height="272" rx="8" stroke="${color}" stroke-width="4.5" fill="none" stroke-dasharray="${dashArray}"/>
+        ${borderStyle === 'double' ? `<rect x="32" y="32" width="256" height="256" rx="6" stroke="${color}" stroke-width="1.8" fill="none"/>` : ''}
+
+        <!-- Ornate Corners -->
+        <circle cx="44" cy="44" r="4" fill="${color}"/>
+        <circle cx="276" cy="44" r="4" fill="${color}"/>
+        <circle cx="44" cy="276" r="4" fill="${color}"/>
+        <circle cx="276" cy="276" r="4" fill="${color}"/>
+
+        ${topText ? `<text x="160" y="78" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="13" font-weight="700" letter-spacing="1.2">${topText}</text>` : ''}
+        <line x1="48" y1="94" x2="272" y2="94" stroke="${color}" stroke-width="1.5"/>
+
+        ${emblemSymbol ? `<text x="160" y="140" text-anchor="middle" fill="${color}" font-size="28">${emblemSymbol}</text>` : ''}
+        ${centerText ? `<text x="160" y="${emblemSymbol ? 180 : 160}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="18" font-weight="800">${centerText}</text>` : ''}
+
+        <line x1="48" y1="210" x2="272" y2="210" stroke="${color}" stroke-width="1.5"/>
+        ${subText ? `<text x="160" y="234" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="12" font-weight="600">${subText}</text>` : ''}
+        ${bottomText ? `<text x="160" y="260" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="11" font-weight="500">${bottomText}</text>` : ''}
+      `;
+            } else if (shape === 'badge') {
+                svgContent = `
+        <!-- Badge Serrated Frame -->
+        <circle cx="160" cy="160" r="144" stroke="${color}" stroke-width="3" stroke-dasharray="4 3" fill="none"/>
+        <circle cx="160" cy="160" r="134" stroke="${color}" stroke-width="4" fill="none"/>
+        <circle cx="160" cy="160" r="125" stroke="${color}" stroke-width="1.5" fill="none"/>
+        <circle cx="160" cy="160" r="90" stroke="${color}" stroke-width="1.5" fill="none"/>
+
+        <!-- Curved Arcs -->
+        ${topText ? `
+          <text fill="${color}" font-family="${fontFamily}" font-size="12" font-weight="700" letter-spacing="1.5">
+            <textPath href="#top-circle-arc" startOffset="50%" text-anchor="middle">${topText}</textPath>
+          </text>
+        ` : ''}
+
+        ${bottomText ? `
+          <text fill="${color}" font-family="${fontFamily}" font-size="11" font-weight="700" letter-spacing="1.5">
+            <textPath href="#bottom-circle-arc" startOffset="50%" text-anchor="middle">${bottomText}</textPath>
+          </text>
+        ` : ''}
+
+        ${emblemSymbol ? `<text x="160" y="${centerText ? 144 : 165}" text-anchor="middle" fill="${color}" font-size="22">${emblemSymbol}</text>` : ''}
+        ${centerText ? `<text x="160" y="${emblemSymbol ? 168 : 162}" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="14" font-weight="800">${centerText}</text>` : ''}
+        ${subText ? `<text x="160" y="190" text-anchor="middle" fill="${color}" font-family="${fontFamily}" font-size="10" font-weight="600">${subText}</text>` : ''}
+      `;
+            }
+
+            const fullSVG = `
+      <svg id="live-stamp-svg" width="310" height="310" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(${tilt}deg);">
+        <defs>
+          <!-- Text Arc Paths -->
+          <path id="top-circle-arc" d="M 44,160 A 116,116 0 1,1 276,160" fill="none"/>
+          <path id="bottom-circle-arc" d="M 276,160 A 116,116 0 0,1 44,160" fill="none"/>
+          <path id="top-oval-arc" d="M 36,160 A 124,78 0 1,1 284,160" fill="none"/>
+          <path id="bottom-oval-arc" d="M 284,160 A 124,78 0 0,1 36,160" fill="none"/>
+
+          <!-- Wet Ink Bleed Filter -->
+          <filter id="ink-roughness" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency="${0.03 + (distress * 0.0015)}" numOctaves="3" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="${distress * 0.06}" xChannelSelector="R" yChannelSelector="G" />
+          </filter>
+        </defs>
+        
+        <g filter="url(#ink-roughness)" opacity="${0.98 - (distress * 0.002)}">
+          ${svgContent}
+        </g>
+      </svg>
+    `;
+
+            wrapper.innerHTML = fullSVG;
+        }
+
+        function downloadStampSVG() {
+            const svgElem = document.getElementById('live-stamp-svg');
+            if (!svgElem) return;
+            const svgData = new XMLSerializer().serializeToString(svgElem);
+            const blob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `NP_Stamp_Design_${studioState.shape}.svg`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function addStudioStampToCart() {
+            const shape = studioState.shape.toUpperCase();
+            const hardware = document.getElementById('stamp-hardware-type').value;
+            const topText = document.getElementById('stamp-top-text').value.trim();
+            const centerText = document.getElementById('stamp-center-text').value.trim();
+            const bottomText = document.getElementById('stamp-bottom-text').value.trim();
+
+            const textSummary = [topText, centerText, bottomText].filter(Boolean).join(" / ") || "Custom Text";
+
+            const customTitle = `Custom ${shape} Stamp (${hardware})`;
+            cart.push({ name: customTitle, text: textSummary });
+            updateOrderBar();
+
+            const toast = document.getElementById('studio-toast');
+            if (toast) {
+                toast.textContent = `✓ ${customTitle} added to your order`;
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 3200);
+            }
+        }
+
+        function renderCatalogue() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = PRODUCTS.map(p => `
+      <div class="product">
+        <img src="${p.img}" alt="${p.name}">
+        <div class="product-body">
+          <div class="product-name">${p.name}</div>
+          <div class="product-desc">${p.desc}</div>
+          <div class="product-actions">
+            <button class="btn" onclick="openProductInStudio('${p.preset}')">Customize in Studio</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+        }
+
+        function openProductInStudio(presetKey) {
+            applyPreset(presetKey);
+            const studio = document.getElementById('design-tool');
+            if (studio) studio.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateOrderBar();
+            renderCartList();
+        }
+
+        function updateOrderBar() {
+            const bar = document.getElementById('order-bar');
+            const count = document.getElementById('order-count');
+            if (cart.length > 0) {
+                bar.classList.add('visible');
+                count.textContent = cart.length + (cart.length === 1 ? " item in order" : " items in order");
+            } else {
+                bar.classList.remove('visible');
+            }
+        }
+
+        function openCheckout() {
+            document.getElementById('checkout').classList.add('open');
+            renderCartList();
+        }
+
+        function renderCartList() {
+            const list = document.getElementById('cart-list');
+            if (cart.length === 0) {
+                list.innerHTML = '<p style="color:var(--ink-soft);font-size:14px;">No items yet — add something from the catalogue above.</p>';
+                return;
+            }
+            list.innerHTML = cart.map((item, i) => `
+      <div class="cart-item">
+        <span><strong>${item.name}</strong> — "${item.text}"</span>
+        <button onclick="removeFromCart(${i})">Remove</button>
+      </div>
+    `).join('');
+        }
+
+        function sendOrder(e) {
+            e.preventDefault();
+            if (cart.length === 0) { alert("Please add at least one item to your order first."); return false; }
+            const name = document.getElementById('cust-name').value.trim();
+            const phone = document.getElementById('cust-phone').value.trim();
+            const mode = document.getElementById('cust-mode').value;
+
+            let message = `New order from N.P Enterprises website\n\nCustomer: ${name}\nPhone: ${phone}\nMode: ${mode}\n\nItems:\n`;
+            cart.forEach((item, i) => { message += `${i + 1}. ${item.name} — "${item.text}"\n`; });
+            message += `\nPlease confirm final price and timeline.`;
+
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
+            return false;
+        }
+
+        // Initialize
+        renderCatalogue();
+        updateStudioPreview();
+    </script>
+
+</body>
+
+</html>
